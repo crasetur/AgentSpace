@@ -1,9 +1,7 @@
 #![no_std]
 
 #[panic_handler]
-fn panic(_info: &core::panic::PanicInfo) -> ! {
-    loop {}
-}
+fn panic(_info: &core::panic::PanicInfo) -> ! { loop {} }
 
 #[no_mangle]
 pub extern "C" fn score_tag(input: i32) -> i32 {
