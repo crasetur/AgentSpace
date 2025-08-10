@@ -3,5 +3,5 @@
   "plugins": ["@typescript-eslint"],
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   "env": { "node": true, "es2022": true },
-  "ignorePatterns": []  // don't ignore src by accident
+  "ignorePatterns": [] // don't ignore src by accident
 }

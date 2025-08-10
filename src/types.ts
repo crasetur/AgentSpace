@@ -1,9 +1,9 @@
-import { z } from "zod";
+import { z } from 'zod';
 export const AgentSchema = z.object({
   url: z.string().url(),
   name: z.string().min(1),
   tags: z.array(z.union([z.number(), z.string()])).min(1),
-  score: z.number().optional()
+  score: z.number().optional(),
 });
 export type Agent = z.infer<typeof AgentSchema>;
 
