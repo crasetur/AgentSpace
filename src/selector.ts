@@ -1,4 +1,4 @@
-import { Agent } from './types.js';
+import type { Agent } from "./types.js";
 export function selectAgents(agents: Agent[], needTags: (number | string)[]) {
   const score = (a: Agent) =>
     needTags.reduce((acc, t) => acc + (a.tags.includes(t) ? 1 : 0), 0);
